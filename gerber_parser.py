@@ -589,7 +589,8 @@ class GerberParser:
                 raise IOError(f"No se pudo leer el fichero: {filepath}") from e
         elif gerber_content is None:
             raise ValueError("Se debe proporcionar 'gerber_content' o 'filepath'.")
-
+        if gerber_content.find("*") == -1:
+            raise ValueError("No parece ser un archivo Gerber.")
         gerber_content = gerber_content.replace("\n", "").replace("\r", "")
         command_re = re.compile(r"%(?P<ext>.*?)%|(?P<cmd>[^\*%]+)\*")
         for match in command_re.finditer(gerber_content):

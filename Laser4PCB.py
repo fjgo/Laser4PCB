@@ -586,6 +586,8 @@ class L4PFrame(wx.Frame):
             )
         )
         about_info.SetCopyright("© 2025 Francisco García")
+        about_info.AddDeveloper("Francisco García")
+        about_info.AddTranslator("Francisco García")
         wx.adv.AboutBox(about_info, self)
 
     def on_connect(self, event):
@@ -718,5 +720,7 @@ if __name__ == "__main__":
     app = ab.BaseApp(redirect=False)
     frame = L4PFrame(None, title=app.AppDisplayName, size=(1024, 768))
     frame.SetMinSize((600, 600))
+    frame.SetIcons(wx.IconBundle("./Laser4PCB.ico", wx.BITMAP_TYPE_ICO))
+    app.SetTopWindow(frame)
     frame.Show()
     app.MainLoop()

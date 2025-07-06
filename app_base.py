@@ -18,7 +18,7 @@ from wx.lib.mixins.inspection import InspectionMixin
 from settings_dialog import EVT_CONFIG_UPDATED
 
 appName = "Laser4PCB"
-__version__ = "1.0.0"
+__version__ = "0.5.0"
 
 # languages you want to support
 supLang = {

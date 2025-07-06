@@ -1,4 +1,7 @@
 __pycache__
 .vscode
+build/
+dist/
+ejemplos/
 *.log
 *.ini

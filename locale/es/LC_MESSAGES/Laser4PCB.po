@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Laser4PCB\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-18 14:13+0200\n"
-"PO-Revision-Date: 2025-06-18 14:13+0200\n"
+"POT-Creation-Date: 2025-06-19 11:40+0200\n"
+"PO-Revision-Date: 2025-06-19 11:44+0200\n"
 "Last-Translator: Francisco García <fjgo@soy-yo.net>\n"
 "Language-Team: Francisco García\n"
 "Language: es_ES\n"
@@ -20,451 +20,345 @@ msgstr ""
 "X-Generator: Poedit 3.4.4\n"
 "X-Poedit-Basepath: ../../..\n"
 "X-Poedit-KeywordsList: GetTranslation:1,2;_:1,2\n"
-"X-Poedit-SearchPath-0: Laser4PCB.py\n"
-"X-Poedit-SearchPath-1: app_base.py\n"
-"X-Poedit-SearchPath-2: .\n"
-"X-Poedit-SearchPath-3: expression_evaluator.py\n"
-"X-Poedit-SearchPath-4: gcode_generator.py\n"
-"X-Poedit-SearchPath-5: gerber_parser.py\n"
-"X-Poedit-SearchPath-6: settings_dialog.py\n"
-"X-Poedit-SearchPath-7: vector_canvas.py\n"
+"X-Poedit-SearchPath-0: .\n"
 
-#: Laser4PCB-pve-safeBackup-0001.py:79 Laser4PCB.py:143
-msgid "&File"
-msgstr "&Archivo"
-
-#: Laser4PCB-pve-safeBackup-0001.py:83 Laser4PCB-pve-safeBackup-0001.py:517
-#: Laser4PCB.py:471
-msgid "Open Gerber file"
-msgstr "Abrir archivo Gerber"
-
-#: Laser4PCB-pve-safeBackup-0001.py:85 Laser4PCB.py:148
-msgid "Open a Gerber file"
-msgstr "Abrir un archivo Gerber"
-
-#: Laser4PCB-pve-safeBackup-0001.py:90 Laser4PCB-pve-safeBackup-0001.py:588
-#: Laser4PCB.py:520
-msgid "Open ZIP file"
-msgstr "Abrir archivo ZIP"
-
-#: Laser4PCB-pve-safeBackup-0001.py:92
-msgid "Open a zip file with layers"
-msgstr "Abre un archivo zip con capas"
-
-#: Laser4PCB-pve-safeBackup-0001.py:98
-msgid "Save .gcode"
-msgstr "Guardar .gcode"
-
-#: Laser4PCB-pve-safeBackup-0001.py:100 Laser4PCB.py:167
-msgid "Save the generated gcode"
-msgstr "Guarda el Gcode generado"
-
-#: Laser4PCB-pve-safeBackup-0001.py:105 Laser4PCB-pve-safeBackup-0001.py:632
-#: Laser4PCB.py:596
-msgid "Save image"
-msgstr "Guardar imagen"
-
-#: Laser4PCB-pve-safeBackup-0001.py:107
-msgid "Save a current view capture"
-msgstr "Guarda una captura de la vista actual"
-
-#: Laser4PCB-pve-safeBackup-0001.py:113
-msgid "Exit"
-msgstr "Salir"
-
-#: Laser4PCB-pve-safeBackup-0001.py:115 Laser4PCB.py:180
-msgid "Get out of application"
-msgstr "Salir de la aplicación"
-
-#: Laser4PCB-pve-safeBackup-0001.py:121 Laser4PCB.py:186
-msgid "&Edit"
-msgstr "&Editar"
-
-#: Laser4PCB-pve-safeBackup-0001.py:125 settings_dialog.py:16
-msgid "Preferences"
-msgstr "Preferencias"
-
-#: Laser4PCB-pve-safeBackup-0001.py:127 Laser4PCB.py:191
-msgid "Open configuration dialog"
-msgstr "Abrir el diálogo de configuración"
-
-#: Laser4PCB-pve-safeBackup-0001.py:133 Laser4PCB.py:197
-msgid "&Control"
-msgstr "&Control"
-
-#: Laser4PCB-pve-safeBackup-0001.py:137
-msgid "Set origin"
-msgstr "Establecer origen"
-
-#: Laser4PCB-pve-safeBackup-0001.py:139 Laser4PCB.py:202 Laser4PCB.py:357
-msgid "Set current position as origin (0,0)"
-msgstr "Establecer posición actual como origen(0,0)"
-
-#: Laser4PCB-pve-safeBackup-0001.py:144
-msgid "Go to origin"
-msgstr "Ir a origen"
-
-#: Laser4PCB-pve-safeBackup-0001.py:146 Laser4PCB-pve-safeBackup-0001.py:296
-#: Laser4PCB.py:208 Laser4PCB.py:358
-msgid "Go to origin (0,0)"
-msgstr "Ir a origen (0,0)"
-
-#: Laser4PCB-pve-safeBackup-0001.py:151 Laser4PCB-pve-safeBackup-0001.py:299
-#: Laser4PCB.py:359
-msgid "Send"
-msgstr "Enviar"
-
-#: Laser4PCB-pve-safeBackup-0001.py:153 Laser4PCB.py:214
-msgid "Send to engraver"
-msgstr "Enviar al grabador"
-
-#: Laser4PCB-pve-safeBackup-0001.py:159 Laser4PCB.py:220
-msgid "&Help"
-msgstr "&Ayuda"
-
-#: Laser4PCB-pve-safeBackup-0001.py:163
-msgid "About"
-msgstr "Acerca de"
-
-#: Laser4PCB-pve-safeBackup-0001.py:165 Laser4PCB.py:225
-msgid "Application information"
-msgstr "Información de la aplicación"
-
-#: Laser4PCB-pve-safeBackup-0001.py:218
-msgid "Move up and left(X-, Y+)"
-msgstr "Mover arriba e izquierda (X-, Y+)"
-
-#: Laser4PCB-pve-safeBackup-0001.py:227
-msgid "Move up(Y+)"
-msgstr "Mover arriba (Y+)"
-
-#: Laser4PCB-pve-safeBackup-0001.py:235
-msgid "Move up and right(X+, Y+)"
-msgstr "Mover arriba y derecha (X+, Y+)"
-
-#: Laser4PCB-pve-safeBackup-0001.py:244 Laser4PCB.py:348
-msgid "Move left (X-)"
-msgstr "Mover izquierda (X-)"
-
-#: Laser4PCB-pve-safeBackup-0001.py:248 Laser4PCB.py:349
-msgid "Stop movement"
-msgstr "Parar movimiento"
-
-#: Laser4PCB-pve-safeBackup-0001.py:255
-msgid "Move right(X+)"
-msgstr "Mover derecha (X+)"
-
-#: Laser4PCB-pve-safeBackup-0001.py:264 Laser4PCB.py:351
-msgid "Move down and left (X-, Y-)"
-msgstr "Mover abajo e izquierda (X-, Y-)"
-
-#: Laser4PCB-pve-safeBackup-0001.py:272 Laser4PCB.py:352
-msgid "Move down (Y-)"
-msgstr "Mover abajo (Y-)"
-
-#: Laser4PCB-pve-safeBackup-0001.py:280 Laser4PCB.py:353
-msgid "Move down and right (X+, Y-)"
-msgstr "Mover abajo y derecha (X+, Y-)"
-
-#: Laser4PCB-pve-safeBackup-0001.py:291
-msgid "Set current position as origin(0,0)"
-msgstr "Establecer posición actual como origen(0,0)"
-
-#: Laser4PCB-pve-safeBackup-0001.py:353 Laser4PCB.py:376
-msgid "Rendering area for Gerber"
-msgstr "Área de visualización para Gerber"
-
-#: Laser4PCB-pve-safeBackup-0001.py:355 Laser4PCB.py:378
-msgid "Gerber"
-msgstr "Gerber"
-
-#: Laser4PCB-pve-safeBackup-0001.py:358 Laser4PCB.py:380
-msgid "Rendering area for GCode"
-msgstr "Área de visualización para GCode"
-
-#: Laser4PCB-pve-safeBackup-0001.py:360 Laser4PCB.py:382 settings_dialog.py:33
-msgid "GCode"
-msgstr "GCode"
-
-#: Laser4PCB-pve-safeBackup-0001.py:383 Laser4PCB.py:400 settings_dialog.py:125
-msgid "Trace Outline"
-msgstr "Trazar contorno"
-
-#: Laser4PCB-pve-safeBackup-0001.py:384 Laser4PCB.py:401 settings_dialog.py:134
-msgid "Fill Interior"
-msgstr "Rellenar Interior"
-
-#: Laser4PCB-pve-safeBackup-0001.py:385 Laser4PCB.py:402
-msgid "Invert Layer"
-msgstr "Invertir capa"
-
-#: Laser4PCB-pve-safeBackup-0001.py:421 settings_dialog.py:27
-msgid "Engraver"
-msgstr "Grabador"
-
-#: Laser4PCB-pve-safeBackup-0001.py:425 Laser4PCB.py:77
+#: Laser4PCB.py:77
 msgid "Movement"
 msgstr "Movimiento"
 
-#: Laser4PCB-pve-safeBackup-0001.py:442
-msgid "Log"
-msgstr "Registro"
+#: Laser4PCB.py:81 Laser4PCB.py:355 settings_dialog.py:28
+msgid "GCode"
+msgstr "GCode"
 
-#: Laser4PCB-pve-safeBackup-0001.py:520 Laser4PCB.py:474
+#: Laser4PCB.py:101
+msgid "Connection"
+msgstr "Conexión"
+
+#: Laser4PCB.py:131
+msgid "&File"
+msgstr "&Archivo"
+
+#: Laser4PCB.py:135
+msgid "Open Gerber file\tCtrl+G"
+msgstr "Abrir archivo Gerber\tCtrl+G"
+
+#: Laser4PCB.py:136
+msgid "Open a Gerber file"
+msgstr "Abrir un archivo Gerber"
+
+#: Laser4PCB.py:148
+msgid "Load .gcode\tCtrl+O"
+msgstr "Cargar .gcode\tCtrl+S"
+
+#: Laser4PCB.py:149
+msgid "Load a gcode file"
+msgstr "Carga un archivo gcode"
+
+#: Laser4PCB.py:154
+msgid "Save .gcode\tCtrl+S"
+msgstr "Guardar .gcode\tCtrl+S"
+
+#: Laser4PCB.py:155
+msgid "Save the generated gcode"
+msgstr "Guarda el Gcode generado"
+
+#: Laser4PCB.py:167
+msgid "Exit\tCtrl+Q"
+msgstr "Salir\tCtrl+Q"
+
+#: Laser4PCB.py:168
+msgid "Get out of application"
+msgstr "Salir de la aplicación"
+
+#: Laser4PCB.py:174
+msgid "&Edit"
+msgstr "&Editar"
+
+#: Laser4PCB.py:178
+msgid "Preferences\tCtrl+P"
+msgstr "Preferencias\tCtrl+P"
+
+#: Laser4PCB.py:179
+msgid "Open configuration dialog"
+msgstr "Abrir el diálogo de configuración"
+
+#: Laser4PCB.py:185
+msgid "&Control"
+msgstr "&Control"
+
+#: Laser4PCB.py:189
+msgid "Set origin\tCtrl+R"
+msgstr "Establecer origen\tCtrl+R"
+
+#: Laser4PCB.py:190 Laser4PCB.py:330
+msgid "Set current position as origin (0,0)"
+msgstr "Establecer posición actual como origen(0,0)"
+
+#: Laser4PCB.py:195
+msgid "Go to origin\tCtrl+H"
+msgstr "Ir a origen\tCtrl+H"
+
+#: Laser4PCB.py:196 Laser4PCB.py:331
+msgid "Go to origin (0,0)"
+msgstr "Ir a origen (0,0)"
+
+#: Laser4PCB.py:201
+msgid "Send\tCtrl+E"
+msgstr "Enviar\tCtrl+E"
+
+#: Laser4PCB.py:202
+msgid "Send to engraver"
+msgstr "Enviar al grabador"
+
+#: Laser4PCB.py:208
+msgid "&Help"
+msgstr "&Ayuda"
+
+#: Laser4PCB.py:212
+msgid "About\tF1"
+msgstr "Acerca de\tF1"
+
+#: Laser4PCB.py:213
+msgid "Application information"
+msgstr "Información de la aplicación"
+
+#: Laser4PCB.py:241
+msgid "Port:"
+msgstr "Puerto:"
+
+#: Laser4PCB.py:248
+msgid "Speed:"
+msgstr "Velocidad:"
+
+#: Laser4PCB.py:270 Laser4PCB.py:273 Laser4PCB.py:600 Laser4PCB.py:679
+msgid "Connect"
+msgstr "Conectar"
+
+#: Laser4PCB.py:274 Laser4PCB.py:672
+msgid "Disconnect"
+msgstr "Desconectar"
+
+#: Laser4PCB.py:318
+msgid "Move up and left (X-, Y+)"
+msgstr "Mover arriba e izquierda (X-, Y+)"
+
+#: Laser4PCB.py:319
+msgid "Move up (Y+)"
+msgstr "Mover arriba (Y+)"
+
+#: Laser4PCB.py:320
+msgid "Move up and right (X+, Y+)"
+msgstr "Mover arriba y derecha (X+, Y+)"
+
+#: Laser4PCB.py:321
+msgid "Move left (X-)"
+msgstr "Mover izquierda (X-)"
+
+#: Laser4PCB.py:322
+msgid "Stop movement"
+msgstr "Parar movimiento"
+
+#: Laser4PCB.py:323
+msgid "Move right (X+)"
+msgstr "Mover derecha (X+)"
+
+#: Laser4PCB.py:324
+msgid "Move down and left (X-, Y-)"
+msgstr "Mover abajo e izquierda (X-, Y-)"
+
+#: Laser4PCB.py:325
+msgid "Move down (Y-)"
+msgstr "Mover abajo (Y-)"
+
+#: Laser4PCB.py:326
+msgid "Move down and right (X+, Y-)"
+msgstr "Mover abajo y derecha (X+, Y-)"
+
+#: Laser4PCB.py:332
+msgid "Send"
+msgstr "Enviar"
+
+#: Laser4PCB.py:349
+msgid "Rendering area for Gerber"
+msgstr "Área de visualización para Gerber"
+
+#: Laser4PCB.py:351
+msgid "Gerber"
+msgstr "Gerber"
+
+#: Laser4PCB.py:353
+msgid "Rendering area for GCode"
+msgstr "Área de visualización para GCode"
+
+#: Laser4PCB.py:371 settings_dialog.py:109
+msgid "Trace Outline"
+msgstr "Trazar contorno"
+
+#: Laser4PCB.py:372 settings_dialog.py:117
+msgid "Fill Interior"
+msgstr "Rellenar Interior"
+
+#: Laser4PCB.py:373
+msgid "Invert Layer"
+msgstr "Invertir capa"
+
+#: Laser4PCB.py:428
+msgid "Open Gerber file"
+msgstr "Abrir archivo Gerber"
+
+#: Laser4PCB.py:431
 msgid "Gerber files"
 msgstr "Archivos Gerber"
 
-#: Laser4PCB-pve-safeBackup-0001.py:521 Laser4PCB.py:475
+#: Laser4PCB.py:432
 msgid "Top layer"
 msgstr "Capa superior"
 
-#: Laser4PCB-pve-safeBackup-0001.py:522 Laser4PCB.py:476
+#: Laser4PCB.py:433
 msgid "Bottom layer"
 msgstr "Capa inferior"
 
-#: Laser4PCB-pve-safeBackup-0001.py:523 Laser4PCB.py:477
+#: Laser4PCB.py:434
 msgid "Top solder mask"
 msgstr "Máscara de soldadura superior"
 
-#: Laser4PCB-pve-safeBackup-0001.py:524 Laser4PCB.py:478
+#: Laser4PCB.py:435
 msgid "Bottom solder mask"
 msgstr "Máscara de soldadura inferior"
 
-#: Laser4PCB-pve-safeBackup-0001.py:525 Laser4PCB.py:479
+#: Laser4PCB.py:436
 msgid "Top silkscreen"
 msgstr "Serigrafía superior"
 
-#: Laser4PCB-pve-safeBackup-0001.py:526 Laser4PCB.py:480
+#: Laser4PCB.py:437
 msgid "Bottom silkscreen"
 msgstr "Serigrafía inferior"
 
-#: Laser4PCB-pve-safeBackup-0001.py:527 Laser4PCB.py:481
+#: Laser4PCB.py:438
 msgid "Top paste"
 msgstr "Pasta de soldadura superior"
 
-#: Laser4PCB-pve-safeBackup-0001.py:528 Laser4PCB.py:482
+#: Laser4PCB.py:439
 msgid "Bottom paste"
 msgstr "Pasta de soldadura inferior"
 
-#: Laser4PCB-pve-safeBackup-0001.py:529 Laser4PCB.py:483
+#: Laser4PCB.py:440
 msgid "Keep-out layer"
 msgstr "Capa de área restringida"
 
-#: Laser4PCB-pve-safeBackup-0001.py:531 Laser4PCB.py:485
+#: Laser4PCB.py:442
 msgid "Mechanical layers"
 msgstr "Capas mecánicas"
 
-#: Laser4PCB-pve-safeBackup-0001.py:534 Laser4PCB.py:488
+#: Laser4PCB.py:445
 msgid "Top Pad Master"
 msgstr "Pads superiores"
 
-#: Laser4PCB-pve-safeBackup-0001.py:535 Laser4PCB.py:489
+#: Laser4PCB.py:446
 msgid "Bottom Pad Master"
 msgstr "Pads inferiores"
 
-#: Laser4PCB-pve-safeBackup-0001.py:536 Laser4PCB.py:490
+#: Laser4PCB.py:447
 msgid "All files"
 msgstr "Todos los archivos"
 
-#: Laser4PCB-pve-safeBackup-0001.py:548 Laser4PCB.py:504
+#: Laser4PCB.py:459
 #, python-brace-format
 msgid "Selected {num_files} Gerber file: {list_paths}"
 msgid_plural "Selected {num_files} Gerber files: {list_paths}"
 msgstr[0] "Seleccionado {num_files} archivo Gerber: {list_paths}"
 msgstr[1] "Seleccionados {num_files} archivos Gerber: {list_paths}"
 
-#: Laser4PCB-pve-safeBackup-0001.py:556 Laser4PCB.py:512
+#: Laser4PCB.py:467
 #, python-brace-format
 msgid "Error opening Gerber file: {e}"
 msgstr "Error abriendo archivo Gerber: {e}"
 
-#: Laser4PCB-pve-safeBackup-0001.py:589 Laser4PCB.py:521
+#: Laser4PCB.py:475
+msgid "Open ZIP file"
+msgstr "Abrir archivo ZIP"
+
+#: Laser4PCB.py:476
 msgid "ZIP files"
 msgstr "Archivos ZIP"
 
-#: Laser4PCB-pve-safeBackup-0001.py:596 Laser4PCB.py:529
+#: Laser4PCB.py:484
 #, python-brace-format
 msgid "Opening ZIP: {pathname}"
 msgstr "Abriendo ZIP: {pathname}"
 
-#: Laser4PCB-pve-safeBackup-0001.py:600 Laser4PCB.py:533
+#: Laser4PCB.py:488
 #, python-brace-format
 msgid "Error opening ZIP file: {e}"
 msgstr "Error abriendo archivo ZIP: {e}"
 
-#: Laser4PCB-pve-safeBackup-0001.py:608 Laser4PCB.py:570
-msgid "Save GCODE file"
-msgstr "Guardar archivo GCODE"
-
-#: Laser4PCB-pve-safeBackup-0001.py:609 Laser4PCB.py:541 Laser4PCB.py:571
-msgid "GCODE files"
-msgstr "Archivo GCODE"
-
-#: Laser4PCB-pve-safeBackup-0001.py:616 Laser4PCB.py:578
-#, python-brace-format
-msgid "Saving GCODE in: {pathname}"
-msgstr "Guardando GCODE en: {pathname}"
-
-#: Laser4PCB-pve-safeBackup-0001.py:624
-#, python-brace-format
-msgid "Error saving GCODE file: {e}"
-msgstr "Error guardando archivo GCODE: {e}"
-
-#: Laser4PCB-pve-safeBackup-0001.py:634 Laser4PCB.py:598
-msgid "PNG Images"
-msgstr "Imágenes PNG"
-
-#: Laser4PCB-pve-safeBackup-0001.py:634 Laser4PCB.py:598
-msgid "JPG Images"
-msgstr "Imágenes JPG"
-
-#: Laser4PCB-pve-safeBackup-0001.py:642 Laser4PCB.py:607
-#, python-brace-format
-msgid "Saving image in: {pathname}"
-msgstr "Guardando imagen en: {pathname}"
-
-#: Laser4PCB-pve-safeBackup-0001.py:646 Laser4PCB.py:614
-#, python-brace-format
-msgid "Error saving image: {e}"
-msgstr "Error guardando imagen: {e}"
-
-#: Laser4PCB-pve-safeBackup-0001.py:651 Laser4PCB.py:619
-msgid "Opening configuration"
-msgstr "Abriendo configuración"
-
-#: Laser4PCB-pve-safeBackup-0001.py:654 Laser4PCB.py:622
-msgid "Updated configuration"
-msgstr "Configuración actualizada"
-
-#: Laser4PCB-pve-safeBackup-0001.py:656 Laser4PCB.py:624
-msgid "Canceled by the user"
-msgstr "Cancelado por el usuario"
-
-#: Laser4PCB-pve-safeBackup-0001.py:679
-msgid ""
-"An application to generate GCODE from Gerber \n"
-" and send it to a laser engraver."
-msgstr ""
-"Una aplicación para generar GCODE desde Gerber\n"
-"y enviarlo a un grabador láser."
-
-#: Laser4PCB-pve-safeBackup-0001.py:691 Laser4PCB.py:660
-#, python-brace-format
-msgid "Move head: {command}"
-msgstr "Moviendo cabezal: {command}"
-
-#: Laser4PCB-pve-safeBackup-0001.py:716 Laser4PCB.py:677
-msgid "Setting origin"
-msgstr "Estableciendo origen"
-
-#: Laser4PCB-pve-safeBackup-0001.py:721 Laser4PCB.py:681
-msgid "Going to origin"
-msgstr "Yendo al origen"
-
-#: Laser4PCB-pve-safeBackup-0001.py:726
-msgid "Stopping movement!"
-msgstr "¡Parando movimiento!"
-
-#: Laser4PCB-pve-safeBackup-0001.py:731 Laser4PCB.py:685
-msgid "Sending..."
-msgstr "Enviando..."
-
-#: Laser4PCB.py:105
-msgid "Connection"
-msgstr "Conexión"
-
-#: Laser4PCB.py:147
-msgid "Open Gerber file\tCtrl+G"
-msgstr "Abrir archivo Gerber\tCtrl+G"
-
-#: Laser4PCB.py:160
-msgid "Load .gcode\tCtrl+O"
-msgstr "Cargar .gcode\tCtrl+S"
-
-#: Laser4PCB.py:161
-msgid "Load a gcode file"
-msgstr "Carga un archivo gcode"
-
-#: Laser4PCB.py:166
-msgid "Save .gcode\tCtrl+S"
-msgstr "Guardar .gcode\tCtrl+S"
-
-#: Laser4PCB.py:179
-msgid "Exit\tCtrl+Q"
-msgstr "Salir\tCtrl+Q"
-
-#: Laser4PCB.py:190
-msgid "Preferences\tCtrl+P"
-msgstr "Preferencias\tCtrl+P"
-
-#: Laser4PCB.py:201
-msgid "Set origin\tCtrl+R"
-msgstr "Establecer origen\tCtrl+R"
-
-#: Laser4PCB.py:207
-msgid "Go to origin\tCtrl+H"
-msgstr "Ir a origen\tCtrl+H"
-
-#: Laser4PCB.py:213
-msgid "Send\tCtrl+E"
-msgstr "Enviar\tCtrl+E"
-
-#: Laser4PCB.py:224
-msgid "About\tF1"
-msgstr "Acerca de\tF1"
-
-#: Laser4PCB.py:253
-msgid "Port:"
-msgstr "Puerto:"
-
-#: Laser4PCB.py:260
-msgid "Speed:"
-msgstr "Velocidad:"
-
-#: Laser4PCB.py:287 Laser4PCB.py:290 Laser4PCB.py:649 Laser4PCB.py:726
-msgid "Connect"
-msgstr "Conectar"
-
-#: Laser4PCB.py:291 Laser4PCB.py:719
-msgid "Disconnect"
-msgstr "Desconectar"
-
-#: Laser4PCB.py:345
-msgid "Move up and left (X-, Y+)"
-msgstr "Mover arriba e izquierda (X-, Y+)"
-
-#: Laser4PCB.py:346
-msgid "Move up (Y+)"
-msgstr "Mover arriba (Y+)"
-
-#: Laser4PCB.py:347
-msgid "Move up and right (X+, Y+)"
-msgstr "Mover arriba y derecha (X+, Y+)"
-
-#: Laser4PCB.py:350
-msgid "Move right (X+)"
-msgstr "Mover derecha (X+)"
-
-#: Laser4PCB.py:540
+#: Laser4PCB.py:495
 msgid "Load GCODE file"
 msgstr "Cargar archivo GCODE"
 
-#: Laser4PCB.py:550
+#: Laser4PCB.py:496 Laser4PCB.py:523
+msgid "GCODE files"
+msgstr "Archivo GCODE"
+
+#: Laser4PCB.py:503
 #, python-brace-format
 msgid "Loading GCODE from: {pathname}"
 msgstr "Cargando GCODE de: {pathname}"
 
-#: Laser4PCB.py:561
+#: Laser4PCB.py:513
 #, python-brace-format
 msgid "Error loading GCODE file {filename}: {e}"
 msgstr "Error cargando archivo GCODE {filename}: {e}"
 
-#: Laser4PCB.py:586
+#: Laser4PCB.py:522
+msgid "Save GCODE file"
+msgstr "Guardar archivo GCODE"
+
+#: Laser4PCB.py:530
+#, python-brace-format
+msgid "Saving GCODE in: {pathname}"
+msgstr "Guardando GCODE en: {pathname}"
+
+#: Laser4PCB.py:537
 #, python-brace-format
 msgid "Error saving GCODE file {filename}: {e}"
 msgstr "Error guardando archivo GCODE {filename}: {e}"
 
-#: Laser4PCB.py:634
+#: Laser4PCB.py:547
+msgid "Save image"
+msgstr "Guardar imagen"
+
+#: Laser4PCB.py:549
+msgid "PNG Images"
+msgstr "Imágenes PNG"
+
+#: Laser4PCB.py:549
+msgid "JPG Images"
+msgstr "Imágenes JPG"
+
+#: Laser4PCB.py:558
+#, python-brace-format
+msgid "Saving image in: {pathname}"
+msgstr "Guardando imagen en: {pathname}"
+
+#: Laser4PCB.py:565
+#, python-brace-format
+msgid "Error saving image: {e}"
+msgstr "Error guardando imagen: {e}"
+
+#: Laser4PCB.py:570
+msgid "Opening configuration"
+msgstr "Abriendo configuración"
+
+#: Laser4PCB.py:573
+msgid "Updated configuration"
+msgstr "Configuración actualizada"
+
+#: Laser4PCB.py:575
+msgid "Canceled by the user"
+msgstr "Cancelado por el usuario"
+
+#: Laser4PCB.py:585
 msgid ""
 "An application to generate GCODE from Gerber \n"
 "and send it to a laser engraver."
@@ -472,21 +366,38 @@ msgstr ""
 "Una aplicación para generar GCODE desde Gerber\n"
 "y enviarlo a un grabador láser."
 
-#: Laser4PCB.py:651
+#: Laser4PCB.py:602
 msgid "Disconnected."
 msgstr "Desconectado."
 
-#: Laser4PCB.py:653
+#: Laser4PCB.py:604
 #, python-brace-format
 msgid "Trying to connect to {port}..."
 msgstr "Intentando conectar al puerto {port}"
 
-#: Laser4PCB.py:715
+#: Laser4PCB.py:611
+#, python-brace-format
+msgid "Move head: {command}"
+msgstr "Moviendo cabezal: {command}"
+
+#: Laser4PCB.py:628
+msgid "Setting origin"
+msgstr "Estableciendo origen"
+
+#: Laser4PCB.py:632
+msgid "Going to origin"
+msgstr "Yendo al origen"
+
+#: Laser4PCB.py:636
+msgid "Sending..."
+msgstr "Enviando..."
+
+#: Laser4PCB.py:668
 #, python-brace-format
 msgid "Connected to {port} at {speed} bps. GRBL ready."
 msgstr "Conectado al puerto {port} con velocidad {speed} bps. GRBL listo."
 
-#: Laser4PCB.py:724
+#: Laser4PCB.py:677
 #, python-brace-format
 msgid "The connection to {port} failed."
 msgstr "La conexión a {port} falló."
@@ -495,46 +406,107 @@ msgstr "La conexión a {port} falló."
 msgid "Gerber to GCODE converter for laser engraver"
 msgstr "Conversor Gerber a GCODE para grabadores láser"
 
-#: settings_dialog.py:59
+#: settings_dialog.py:14
+msgid "Preferences"
+msgstr "Preferencias"
+
+#: settings_dialog.py:24
+msgid "Engraver"
+msgstr "Grabador"
+
+#: settings_dialog.py:48
 msgid "Advance speed (mm/min):"
 msgstr "Velocidad de avance (mm/min):"
 
-#: settings_dialog.py:70
+#: settings_dialog.py:58
 msgid "Speed movement fast (mm/min):"
 msgstr "Velocidad de movimiento rápido: (mm/min):"
 
-#: settings_dialog.py:81
+#: settings_dialog.py:68
 msgid "Laser Power (0-1000):"
 msgstr "Potencia del Láser (0-1000):"
 
-#: settings_dialog.py:98
+#: settings_dialog.py:84
 msgid "Laser Command ON:"
 msgstr "Comando láser ON:"
 
-#: settings_dialog.py:109
+#: settings_dialog.py:94
 msgid "Laser Command OFF:"
 msgstr "Comando láser OFF:"
 
-#: settings_dialog.py:141
+#: settings_dialog.py:123
 msgid "Displacement Distance:"
 msgstr "Distancia de desplazamiento:"
 
-#: settings_dialog.py:152
+#: settings_dialog.py:133
 msgid "Filling Spacing:"
 msgstr "Espaciado de relleno:"
 
-#: settings_dialog.py:204
+#: settings_dialog.py:184
 #, python-brace-format
 msgid "Format error in the data. Please ensure to enter valid numbers: {e}"
 msgstr "Error de formato en los datos. Asegúrese de introducir números válidos: {e}"
 
-#: settings_dialog.py:206
+#: settings_dialog.py:186
 msgid "Error de Validación"
 msgstr "Error de Validación"
 
 #: vector_canvas.py:11
 msgid "Rendering area"
 msgstr "Área de visualización"
+
+#~ msgid "Open a zip file with layers"
+#~ msgstr "Abre un archivo zip con capas"
+
+#~ msgid "Save .gcode"
+#~ msgstr "Guardar .gcode"
+
+#~ msgid "Save a current view capture"
+#~ msgstr "Guarda una captura de la vista actual"
+
+#~ msgid "Exit"
+#~ msgstr "Salir"
+
+#~ msgid "Set origin"
+#~ msgstr "Establecer origen"
+
+#~ msgid "Go to origin"
+#~ msgstr "Ir a origen"
+
+#~ msgid "About"
+#~ msgstr "Acerca de"
+
+#~ msgid "Move up and left(X-, Y+)"
+#~ msgstr "Mover arriba e izquierda (X-, Y+)"
+
+#~ msgid "Move up(Y+)"
+#~ msgstr "Mover arriba (Y+)"
+
+#~ msgid "Move up and right(X+, Y+)"
+#~ msgstr "Mover arriba y derecha (X+, Y+)"
+
+#~ msgid "Move right(X+)"
+#~ msgstr "Mover derecha (X+)"
+
+#~ msgid "Set current position as origin(0,0)"
+#~ msgstr "Establecer posición actual como origen(0,0)"
+
+#~ msgid "Log"
+#~ msgstr "Registro"
+
+#, python-brace-format
+#~ msgid "Error saving GCODE file: {e}"
+#~ msgstr "Error guardando archivo GCODE: {e}"
+
+#~ msgid ""
+#~ "An application to generate GCODE from Gerber \n"
+#~ " and send it to a laser engraver."
+#~ msgstr ""
+#~ "Una aplicación para generar GCODE desde Gerber\n"
+#~ "y enviarlo a un grabador láser."
+
+#~ msgid "Stopping movement!"
+#~ msgstr "¡Parando movimiento!"
 
 #, python-brace-format
 #~ msgid "Connected to GRBL on {port}"
