@@ -4,10 +4,10 @@ import serial
 import time
 import serial.tools.list_ports
 
-global _
-
 
 class GrblCommunicator:
+    global _
+
     def __init__(self):
         self.serial_port = None
         self.grbl_ready = False

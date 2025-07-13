@@ -1,6 +1,7 @@
 import threading
 import wx
 import wx.adv
+import wx.svg
 import app_base as ab
 from gcode_generator import generate_gcode, parse_gcode_for_preview
 from grbl_communicator import GrblCommunicator
@@ -17,10 +18,9 @@ from vector_canvas import VectorCanvas
 from pathlib import Path
 
 
-global _
-
-
 class L4PFrame(wx.Frame):
+    global _
+
     def __init__(self, parent, **kwds):
         super(L4PFrame, self).__init__(parent, **kwds)
 
@@ -297,12 +297,23 @@ class L4PFrame(wx.Frame):
         return comm_panel
 
     def populate_grid(self, grid, panel, buttons_data):
-        for label, command, tooltip in buttons_data:
+        for label, command, tooltip, icon in buttons_data:
             if isinstance(command, str):
-                handler = lambda event, cmd=command: self.OnMovementCommand(event, cmd)
+                def handler(event, cmd=command):
+                    self.OnMovementCommand(event, cmd)
             else:
                 handler = command
-            button = wx.Button(panel, size=(60, 60), label=label)
+            button = wx.Button(panel, size=(64, 64), label=label)
+            if icon:
+                try :
+                    # ico = wx.Bitmap(f'resources/{icon}', wx.BITMAP_TYPE_ANY)
+                    # ico.SetScaleFactor(scale= ico.Width/42)
+                    # button.SetBitmap(ico)
+                    ico=wx.svg.SVGimage.CreateFromFile(f'resources/{icon}')
+                    button.SetBitmap(ico.ConvertToScaledBitmap((36,36)))
+                except Exception as e :
+                    logging.warning(_("Failed to load icon: {icon}. Error: {e}").format(icon=icon, e=e))
+
             button.SetToolTip(tooltip)
             button.Bind(wx.EVT_BUTTON, handler)
             grid.Add(button, 0, wx.EXPAND)
@@ -315,21 +326,21 @@ class L4PFrame(wx.Frame):
             return lambda event, cmd=command: self.OnMovementCommand(event, cmd)
 
         move_buttons = [
-            ("↖️", get_move("UpLeft"), _("Move up and left (X-, Y+)")),
-            ("⬆️", get_move("Up"), _("Move up (Y+)")),
-            ("↗️", get_move("UpRight"), _("Move up and right (X+, Y+)")),
-            ("⬅️", get_move("Left"), _("Move left (X-)")),
-            ("⏹️", get_move("Stop"), _("Stop movement")),
-            ("➡️", get_move("Right"), _("Move right (X+)")),
-            ("↙️", get_move("DownLeft"), _("Move down and left (X-, Y-)")),
-            ("⬇️", get_move("Down"), _("Move down (Y-)")),
-            ("↘️", get_move("DownRight"), _("Move down and right (X+, Y-)")),
+            ("", get_move("UpLeft"), _("Move up and left (X-, Y+)"), 'arrow_nw.svg'),
+            ("", get_move("Up"), _("Move up (Y+)"),'arrow_n.svg'),
+            ("", get_move("UpRight"), _("Move up and right (X+, Y+)"),'arrow_ne.svg'),
+            ("", get_move("Left"), _("Move left (X-)"),'arrow_w.svg'),
+            ("", get_move("Stop"), _("Stop movement"),'stop.svg'),
+            ("", get_move("Right"), _("Move right (X+)"),'arrow_e.svg'),
+            ("", get_move("DownLeft"), _("Move down and left (X-, Y-)"),'arrow_sw.svg'),
+            ("", get_move("Down"), _("Move down (Y-)"),'arrow_s.svg'),
+            ("", get_move("DownRight"), _("Move down and right (X+, Y-)"),'arrow_se.svg'),
         ]
 
         action_buttons = [
-            ("🎯", self.OnSetOrigin, _("Set current position as origin (0,0)")),
-            ("🏠", self.OnGoHome, _("Go to origin (0,0)")),
-            ("⏯️", self.OnSend, _("Send")),
+            ("", self.OnSetOrigin, _("Set current position as origin (0,0)"),'orig.svg'),
+            ("", self.OnGoHome, _("Go to origin (0,0)"),'home.svg'),
+            ("", self.OnSend, _("Send"),'play_pause.svg'),
         ]
 
         movement_grid = wx.GridSizer(3, 3, 8, 8)
@@ -720,7 +731,7 @@ if __name__ == "__main__":
     app = ab.BaseApp(redirect=False)
     frame = L4PFrame(None, title=app.AppDisplayName, size=(1024, 768))
     frame.SetMinSize((600, 600))
-    frame.SetIcons(wx.IconBundle("./Laser4PCB.ico", wx.BITMAP_TYPE_ICO))
+    frame.SetIcons(wx.IconBundle("./resources/Laser4PCB.ico", wx.BITMAP_TYPE_ICO))
     app.SetTopWindow(frame)
     frame.Show()
     app.MainLoop()

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="100mm"
+   height="100mm"
+   version="1.1"
+   viewBox="0 0 100 100"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <path
+     id="flecha"
+     d="M 50,100 C 76.92,100 100,78.1 100,50 100,23.48 78.98,0 50,0 27.2,0 7.08,15 1.4,38.25 H 50 V 27 c 0,-1 1,-1.542 2,-1 11.8,6.4 38.75,21.5 38.75,21.5 5.14,2.5 5.14,2.5 0,5 L 52,74 c -1,0.5 -2,0 -2,-1 V 61.75 H 1.4 C 7.75,85.93 28.43,100 50,100 Z"
+     style=";fill:#001789;stroke-width:0" />
+</svg>
